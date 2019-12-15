@@ -8,7 +8,7 @@
 	<body>
         <div align="center">
             <h1> Sales Report </h1>          
-            <table style="background-color:white; border: 1px solid gray; border-spacing: 20px; border-collapse: separate;">
+            <table class="report">
                 <tr> 
                     <th> ID </th> 
                     <th> Customer ID </th> 
