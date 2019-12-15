@@ -36,6 +36,7 @@ if (!empty($_GET['salesInput'])){
   $numberOfItem = $_POST['numberOfItem'];
   $dateOfPurchase = $_POST['dateOfPurchase'];
   mysqli_query($con, "INSERT INTO `sales` (`customerId`,`itemId`,`numberOfItem`,`dateOfPurchase`) VALUES ('$customerId','$itemId','$numberOfItem','$dateOfPurchase')");
+    mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem - '$numberOfItem' WHERE `itemName` = '$itemName'");
   header('Location: sales.php');
 }
 
