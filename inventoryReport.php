@@ -24,9 +24,15 @@
                     include ('connection.php');      
                     $result = mysqli_query($con,"SELECT * FROM inventory");
                     while($row = mysqli_fetch_array($result)) {
+                        if ($row['itemType'] === '0'){
+                            $itemType = 'Product';
+                        } else {
+                            $itemType = 'Service';
+                        }
+
                         echo "<tr>";
                         echo '<td>'.$row['id'].'</td>';
-                        echo '<td>'.$row['itemType'].'</td>';
+                        echo '<td>'.$itemType.'</td>';
                         echo '<td>'.$row['itemName'].'</td>';
                         echo '<td>'.$row['buyPrice'].'</td>';
                         echo '<td>'.$row['sellPrice'].'</td>';
