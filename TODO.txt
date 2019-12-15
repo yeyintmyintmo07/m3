@@ -1,0 +1,18 @@
+TODO: [REFACTOR] use functions {process.php}
+TODO: [FEATURE] add alert {in dashboard}
+TODO: [FEATURE] Add mechanic <-[
+    TODO: [FEATURE] add employee table
+        TODO: [FEATURE] add "add" employee in process.php
+            TODO: [FEATURE] add "add" employee form
+        TODO: [FEATURE] add employee column in sales db
+            TODO: [FEATURE] add employee in "make sales" part of process.php
+                TODO: [FEATURE] integrate employee in "make sales" page]
+
+TODO: [FIX] [FEATURE] fix balance sheet, if customer name and item name = same, merge.
+
+#//!-- To be careful for future --/>
+TODO: [FIX] [FEATURE] allow editing everything without affecting previous --
+      *&[product input price, output price, products, customers]
+    TODO: [FIX] [FEATURE] able to edit / delete customer
+    TODO: [FIX] [FEATURE] able to edit / delete product
+    TODO: [FIX] [FEATURE] able to edit / delete sales
