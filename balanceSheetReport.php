@@ -22,12 +22,12 @@
         <th> Profit </th> 
       </tr>
       <?php      
-          include ('connection.php');      
+          include ('connection.php');
           $result = mysqli_query($con,"SELECT * FROM sales 
                                       INNER JOIN customer 
-                                        ON sales.customerID = customer.id
+                                        ON sales.customerId = customer.id
                                       INNER JOIN inventory
-                                        ON sales.itemID = inventory.ID");
+                                        ON sales.itemId = inventory.id");
           while($row = mysqli_fetch_array($result)) {
             echo "<tr>";
             echo '<td>'.$row['customerName'].'</td>';
