@@ -19,7 +19,7 @@ if (!empty($_GET['newInventoryInput'])){
   header('Location: newInventory.php');
 }
 
-// New Inventory Input
+// New Existing Inventory Input
 if (!empty($_GET['existingInventoryInput'])){    
   $itemName = $_POST['itemName'];
   $numberOfItem = $_POST['numberOfItem'];
