@@ -9,11 +9,11 @@
 					<tr> 
 						<td> Customer Name  </td> 
 						<td>  
-							<select name="customerName">
+							<select name="customerId">
 								<?php 									
 									$result = mysqli_query($con,"SELECT * FROM customer");									
 									while ($row = mysqli_fetch_array($result) ) {
-										echo '<option value = "'.$row['customerName'].'">'.$row['customerName'].'</option>';
+										echo '<option value = "'.$row['id'].'">'.$row['customerName'].'</option>';
 									}									
 								?>
 							</select>  
@@ -22,11 +22,11 @@
 					<tr> 
 						<td> Item Name  </td> 
 						<td>  
-							<select name="itemName">
+							<select name="itemId">
 								<?php 
 									$result = mysqli_query($con,"SELECT * FROM inventory");									
 									while ($row = mysqli_fetch_array($result) ) {
-										echo '<option value = "'.$row['itemName'].'">'.$row['itemName'].'</option>';
+										echo '<option value = "'.$row['id'].'">'.$row['itemName'].'</option>';
 									}									
 								?>
 							</select>  

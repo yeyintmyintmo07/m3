@@ -29,10 +29,8 @@ if (!empty($_GET['existingInventoryInput'])){
 
 // Sales Input
 if (!empty($_GET['salesInput'])){    
-  $customerName = $_POST['customerName'];
-  $customerId = $customerName;
-  $itemName = $_POST['itemName'];
-  $itemId = $itemName;
+  $customerId = $_POST['customerId'];
+  $itemId = $_POST['itemId'];
   $numberOfItem = $_POST['numberOfItem'];
   $dateOfPurchase = $_POST['dateOfPurchase'];
   if($dateOfPurchase==="" || $dateOfPurchase==="Leave empty for current time"){
