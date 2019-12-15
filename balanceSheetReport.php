@@ -15,7 +15,7 @@
       <tr> 
         <th> Customer Name </th> 
         <th> Item Name </th> 
-        <th> Number of Item </th> 
+        <th> Number of Item Sold </th>
         <th> Date of Purchase </th> 
         <th> Buy Price (Each)</th>
         <th> Sell Price (Each)</th>
