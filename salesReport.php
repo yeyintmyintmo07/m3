@@ -15,7 +15,8 @@
                         ID </th>
                     <th> Customer
                         Name</th>
-                    <th> Item ID </th> 
+                    <th> Item ID </th>
+                    <th> Item Name</th>
                     <th> Number
                         of Item </th>
                     <th> Date of
@@ -28,11 +29,16 @@
                         $customerId = $row['customerId'];
                         $customerResult = mysqli_query($con,"SELECT * FROM customer WHERE `id` LIKE ('$customerId')");
                         $customerName = mysqli_fetch_array($customerResult)['customerName'];
+
+                        $itemId = $row['itemId'];
+                        $itemResult = mysqli_query($con,"SELECT * FROM inventory WHERE `id` LIKE ('$itemId')");
+                        $itemName = mysqli_fetch_array($itemResult)['itemName'];
                     echo "<tr>";
                     echo '<td>'.$row['id'].'</td>';
                     echo '<td>'.$customerId.'</td>';
                     echo '<td>'.$customerName.'</td>';
-                    echo '<td>'.$row['itemId'].'</td>';
+                    echo '<td>'.$itemId.'</td>';
+                    echo '<td>'.$itemName.'</td>';
                     echo '<td>'.$row['numberOfItem'].'</td>';
                     echo '<td>'.$row['dateOfPurchase'].'</td>';
                     echo "</tr>";
