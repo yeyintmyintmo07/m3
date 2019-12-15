@@ -8,12 +8,12 @@
 					<tr> 
 						<td> Name </td> 
 						<td> 
-							<select name="itemName">
+							<select name="itemId">
 								<?php 
 									include ('connection.php');      
 									$result = mysqli_query($con,"SELECT * FROM inventory WHERE `itemType` LIKE 0");
 									while ($row = mysqli_fetch_array($result) ) {
-										echo '<option value = "'.$row['itemName'].'">'.$row['itemName'].'</option>';
+										echo '<option value = "'.$row['id'].'">'.$row['itemName'].'</option>';
 									}									
 								?>
 							</select> 

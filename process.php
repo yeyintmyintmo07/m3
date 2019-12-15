@@ -21,9 +21,9 @@ if (!empty($_GET['newInventoryInput'])){
 
 // New Existing Inventory Input
 if (!empty($_GET['existingInventoryInput'])){    
-  $itemName = $_POST['itemName'];
+  $itemId = $_POST['itemId'];
   $numberOfItem = $_POST['numberOfItem'];
-  mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem + '$numberOfItem' WHERE `itemName` = '$itemName'");
+  mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem + '$numberOfItem' WHERE `id` = '$itemId'");
   header('Location: existingInventory.php');
 }
 
@@ -37,7 +37,7 @@ if (!empty($_GET['salesInput'])){
       $dateOfPurchase = new DateTime();
       $dateOfPurchase = $dateOfPurchase->format('Y-m-d H:i:s');}
   mysqli_query($con, "INSERT INTO `sales` (`customerId`,`itemId`,`numberOfItem`,`dateOfPurchase`) VALUES ('$customerId','$itemId','$numberOfItem','$dateOfPurchase')");
-    mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem - '$numberOfItem' WHERE `itemName` = '$itemName'");
+    mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem - '$numberOfItem' WHERE `id` = '$itemId'");
   header('Location: sales.php');
 }
 
