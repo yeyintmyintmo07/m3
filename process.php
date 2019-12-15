@@ -35,10 +35,12 @@ if (!empty($_GET['salesInput'])){
   $itemId = $itemName;
   $numberOfItem = $_POST['numberOfItem'];
   $dateOfPurchase = $_POST['dateOfPurchase'];
+  if($dateOfPurchase==="" || $dateOfPurchase==="Leave empty for current time"){
+      $dateOfPurchase = new DateTime();
+      $dateOfPurchase = $dateOfPurchase->format('Y-m-d H:i:s');}
   mysqli_query($con, "INSERT INTO `sales` (`customerId`,`itemId`,`numberOfItem`,`dateOfPurchase`) VALUES ('$customerId','$itemId','$numberOfItem','$dateOfPurchase')");
     mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem - '$numberOfItem' WHERE `itemName` = '$itemName'");
   header('Location: sales.php');
 }
 
 
-?>
