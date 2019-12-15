@@ -1,3 +1,6 @@
+Done: [REFACTOR] [FIX] //{refactor broke stuff} Fix sales report and balance sheet
+TODO: [FIX] Make balance sheet shows total prices instead of each.
+
 TODO: [REFACTOR] use functions {process.php}
 TODO: [FEATURE] add alert {in dashboard}
 TODO: [FEATURE] Add mechanic <-[

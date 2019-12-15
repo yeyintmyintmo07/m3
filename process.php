@@ -31,13 +31,13 @@ if (!empty($_GET['existingInventoryInput'])){
 if (!empty($_GET['salesInput'])){    
   $customerId = $_POST['customerId'];
   $itemId = $_POST['itemId'];
-  $numberOfItem = $_POST['numberOfItem'];
+  $numberOfItemSales = $_POST['numberOfItemSales'];
   $dateOfPurchase = $_POST['dateOfPurchase'];
   if($dateOfPurchase==="" || $dateOfPurchase==="Leave empty for current time"){
       $dateOfPurchase = new DateTime();
       $dateOfPurchase = $dateOfPurchase->format('Y-m-d H:i:s');}
-  mysqli_query($con, "INSERT INTO `sales` (`customerId`,`itemId`,`numberOfItem`,`dateOfPurchase`) VALUES ('$customerId','$itemId','$numberOfItem','$dateOfPurchase')");
-    mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem - '$numberOfItem' WHERE `id` = '$itemId'");
+  mysqli_query($con, "INSERT INTO `sales` (`customerId`,`itemId`,`numberOfItemSales`,`dateOfPurchase`) VALUES ('$customerId','$itemId','$numberOfItemSales','$dateOfPurchase')");
+    mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem - '$numberOfItemSales' WHERE `id` = '$itemId'");
   header('Location: sales.php');
 }
 
