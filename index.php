@@ -9,10 +9,10 @@
                 <td width="20%" style="background-color:lightgreen" align="center">
                     <h2> M3 Car Spa </h2> <hr />
                     <a href="dashboard.php" target="workspace" style="text-decoration:none"> Dashboard </a> <hr />
-                    <a href="customer.php" target="workspace" style="text-decoration:none"> Customer </a> <hr />
-                    <a href="newInventory.php" target="workspace" style="text-decoration:none"> New Inventory </a> <hr />
-                    <a href="existingInventory.php" target="workspace" style="text-decoration:none"> Existing Inventory </a> <hr />
-                    <a href="sales.php" target="workspace" style="text-decoration:none"> Sales </a> <hr />
+                    <a href="customer.php" target="workspace" style="text-decoration:none"> Add Customer </a> <hr />
+                    <a href="newInventory.php" target="workspace" style="text-decoration:none"> Add New Product </a> <hr />
+                    <a href="existingInventory.php" target="workspace" style="text-decoration:none"> Stock Product </a> <hr />
+                    <a href="sales.php" target="workspace" style="text-decoration:none"> Make Sales </a> <hr />
                     <a href="customerReport.php" target="workspace" style="text-decoration:none"> Customer Report </a> <hr />
                     <a href="inventoryReport.php" target="workspace" style="text-decoration:none"> Inventory Report </a> <hr />
                     <a href="salesReport.php" target="workspace" style="text-decoration:none"> Sales Report </a> <hr />

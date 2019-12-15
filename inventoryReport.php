@@ -25,7 +25,7 @@
                     $result = mysqli_query($con,"SELECT * FROM inventory");
                     while($row = mysqli_fetch_array($result)) {
                         if ($row['itemType'] === '0'){
-                            $itemType = 'Product';
+                            $itemType = 'Goods';
                         } else {
                             $itemType = 'Service';
                         }

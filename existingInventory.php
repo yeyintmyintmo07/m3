@@ -3,7 +3,7 @@
 	<body>
 		<div align="center">
 			<form action="process.php?existingInventoryInput=1" method="post">
-				<h1> Existing Inventory </h1>
+				<h1> Stock Existing Product </h1>
 				<table>
 					<tr> 
 						<td> Name </td> 

@@ -4,7 +4,7 @@
 	<body>
 		<div align="center">
 			<form action="process.php?salesInput=1" method="post">
-				<h1> Sales </h1>
+				<h1> Make Sales </h1>
 				<table>
 					<tr> 
 						<td> Customer Name  </td> 
