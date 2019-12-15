@@ -11,18 +11,27 @@
             <table class="report" style="background-color:white; border: 1px solid gray; border-spacing: 20px; border-collapse: separate;">
                 <tr> 
                     <th> ID </th> 
-                    <th> Customer ID </th> 
+                    <th> Customer
+                        ID </th>
+                    <th> Customer
+                        Name</th>
                     <th> Item ID </th> 
-                    <th> Number of Item </th> 
-                    <th> Date of Purchase </th> 
+                    <th> Number
+                        of Item </th>
+                    <th> Date of
+                        Purchase </th>
                 </tr>
                 <?php      
                     include ('connection.php');      
                     $result = mysqli_query($con,"SELECT * FROM sales");
                     while($row = mysqli_fetch_array($result)) {
+                        $customerId = $row['customerId'];
+                        $customerResult = mysqli_query($con,"SELECT * FROM customer WHERE `id` LIKE ('$customerId')");
+                        $customerName = mysqli_fetch_array($customerResult)['customerName'];
                     echo "<tr>";
                     echo '<td>'.$row['id'].'</td>';
-                    echo '<td>'.$row['customerId'].'</td>';
+                    echo '<td>'.$customerId.'</td>';
+                    echo '<td>'.$customerName.'</td>';
                     echo '<td>'.$row['itemId'].'</td>';
                     echo '<td>'.$row['numberOfItem'].'</td>';
                     echo '<td>'.$row['dateOfPurchase'].'</td>';
