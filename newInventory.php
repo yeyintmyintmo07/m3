@@ -9,9 +9,9 @@
 					<tr> 
 						<td> Type </td> 
 						<td> 
-							<select>
-								<option value="1">Product</option>
-								<option value="2">Service</option>
+							<select name="itemType">
+								<option value="0">Product</option>
+								<option value="1">Service</option>
 							</select> 
 						</td> 
 					</tr>

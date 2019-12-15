@@ -11,7 +11,7 @@
 							<select name="itemName">
 								<?php 
 									include ('connection.php');      
-									$result = mysqli_query($con,"SELECT * FROM inventory");									
+									$result = mysqli_query($con,"SELECT * FROM inventory WHERE `itemType` LIKE 0");
 									while ($row = mysqli_fetch_array($result) ) {
 										echo '<option value = "'.$row['itemName'].'">'.$row['itemName'].'</option>';
 									}									
