@@ -17,9 +17,9 @@
         <th> Item Name </th> 
         <th> Number of Item </th> 
         <th> Date of Purchase </th> 
-        <th> Buying Price </th> 
-        <th> Selling Price </th> 
-        <th> Profit </th> 
+        <th> Buy Price (Each)</th>
+        <th> Sell Price (Each)</th>
+        <th> Profit (Total)</th>
       </tr>
       <?php      
           include ('connection.php');
@@ -29,14 +29,18 @@
                                       INNER JOIN inventory
                                         ON sales.itemId = inventory.id");
           while($row = mysqli_fetch_array($result)) {
+              $numberOfItemSales = $row['numberOfItemSales'];
+              $buyPrice = $row['buyPrice'];
+              $sellPrice = $row['sellPrice'];
+              $profit = $sellPrice-$buyPrice;
+              $profit = $profit * $numberOfItemSales;
             echo "<tr>";
             echo '<td>'.$row['customerName'].'</td>';
             echo '<td>'.$row['itemName'].'</td>';
-            echo '<td>'.$row['numberOfItemSales'].'</td>';
+            echo '<td>'.$numberOfItemSales.'</td>';
             echo '<td>'.$row['dateOfPurchase'].'</td>';
-            echo '<td>'.$row['buyPrice'].'</td>';
-            echo '<td>'.$row['sellPrice'].'</td>';
-            $profit = $row['sellPrice']-$row['buyPrice'];
+            echo '<td>'.$buyPrice.'</td>';
+            echo '<td>'.$sellPrice.'</td>';
             echo '<td>'.$profit.'</td>';
             echo "</tr>";
           }      
