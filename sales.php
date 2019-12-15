@@ -32,7 +32,7 @@
 							</select>  
 						</td>
 					</tr>
-					<tr> <td> Number of Item  </td> <td>  <input type="text" name="numberOfItem"/> </td> </tr>
+					<tr> <td> Number of Item  </td> <td>  <input type="text" name="numberOfItemSales"/> </td> </tr>
 					<tr> <td> Date of Purchase </td> <td>
                             <input type="text" name="dateOfPurchase" value="Leave empty for current time"
                                    onfocus="if (this.value==='Leave empty for current time') this.value='';"/>

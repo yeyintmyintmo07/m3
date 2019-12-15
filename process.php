@@ -22,8 +22,8 @@ if (!empty($_GET['newInventoryInput'])){
 // New Existing Inventory Input
 if (!empty($_GET['existingInventoryInput'])){    
   $itemId = $_POST['itemId'];
-  $numberOfItem = $_POST['numberOfItem'];
-  mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItem + '$numberOfItem' WHERE `id` = '$itemId'");
+  $numberOfItemSales = $_POST['numberOfItemSales'];
+  mysqli_query($con, "UPDATE inventory SET numberOfItem = numberOfItemSales + '$numberOfItemSales' WHERE `id` = '$itemId'");
   header('Location: existingInventory.php');
 }
 

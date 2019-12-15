@@ -39,7 +39,7 @@
                     echo '<td>'.$customerName.'</td>';
                     echo '<td>'.$itemId.'</td>';
                     echo '<td>'.$itemName.'</td>';
-                    echo '<td>'.$row['numberOfItem'].'</td>';
+                    echo '<td>'.$row['numberOfItemSales'].'</td>';
                     echo '<td>'.$row['dateOfPurchase'].'</td>';
                     echo "</tr>";
                     }      

@@ -32,7 +32,7 @@
             echo "<tr>";
             echo '<td>'.$row['customerName'].'</td>';
             echo '<td>'.$row['itemName'].'</td>';
-            echo '<td>'.$row['numberOfItem'].'</td>';
+            echo '<td>'.$row['numberOfItemSales'].'</td>';
             echo '<td>'.$row['dateOfPurchase'].'</td>';
             echo '<td>'.$row['buyPrice'].'</td>';
             echo '<td>'.$row['sellPrice'].'</td>';
