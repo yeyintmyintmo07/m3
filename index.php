@@ -16,6 +16,7 @@
                     <a href="customerReport.php" target="workspace" style="text-decoration:none"> Customer Report </a> <hr />
                     <a href="inventoryReport.php" target="workspace" style="text-decoration:none"> Inventory Report </a> <hr />
                     <a href="salesReport.php" target="workspace" style="text-decoration:none"> Sales Report </a> <hr />
+                    <a href="balanceSheetReport.php" target="workspace" style="text-decoration:none"> Balance Sheet </a> <hr />
                 </td>
                 <td style="background-color:lightblue" align="center" valign="center">
                     <iframe src="dashboard.php" name="workspace" width="90%" height="80%" frameBorder="0">
