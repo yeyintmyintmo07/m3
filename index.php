@@ -3,7 +3,7 @@
         <title>M3 Car Spa</title>
     </head>
 	<body>
-    <table height="100%" width="100%"> <td align="center" valign="center">
+    <table height="100%" width="100%"> <tr> <td align="center" valign="center">
         <table width="75%" height="75%">      
             <tr>
                 <td width="20%" style="background-color:lightgreen" align="center">
@@ -23,6 +23,6 @@
                 </td>
             </tr>        
         </table>
-    </td> </table>
+            </td> </tr> </table>
 	</body>
 </html>
